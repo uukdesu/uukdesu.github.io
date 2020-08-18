@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="link-html">
+
+<head>
+    <title>Uuk</title>
+    <base href="https://cek.bio/">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Arif Qomari official website">
+    <meta property="og:title" content="Arif Qomari official website">
+    <meta property="og:description" content="Arif Qomari official website">
+    <meta property="og:site_name" content="Arif Qomari official website">
+    <link href="https://cek.bio/uploads/favicon/00b8c527bdc8f119b5ad4bdf0280aabf.png" rel="shortcut icon" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <link href="https://cek.bio/themes/altum/assets/css/bootstrap.min.css?v=431" rel="stylesheet" media="screen">
+    <link href="https://cek.bio/themes/altum/assets/css/custom.css?v=431" rel="stylesheet" media="screen">
+    <link href="https://cek.bio/themes/altum/assets/css/link-custom.css?v=431" rel="stylesheet" media="screen">
+    <link href="https://cek.bio/themes/altum/assets/css/animate.min.css?v=431" rel="stylesheet" media="screen">
+
+
+
+</head>
+
+<body class="link-body " style="background: url('images/bg1.png');">
+    <div class="container animated fadeIn">
+        <div class="row d-flex justify-content-center text-center">
+            <div class="col-md-8 link-content">
+
+                <header class="d-flex flex-column align-items-center" style="color: #000000">
+
+                    <img id="image" src="images/emilia.gif" alt="Avatar" class="link-image" />
+
+                    <div class="d-flex flex-row align-items-center mt-4">
+                        <h1 id="title">Muhammad Arif Qomari</h1>
+
+                        <span data-toggle="tooltip" title="Verified" class="link-verified ml-1"><i
+                                class="fa fa-check-circle fa-1x"></i></span>
+                    </div>
+
+                    <p id="description">&#34;Monggo difollow tipis tipis&#34;</p>
+                </header>
+
+                <main id="links" class="mt-4">
+
+
+
+                    <div data-link-id="135">
+
+
+
+                        <div class="my-3">
+                            <a href="https://www.facebook.com/uukarif"
+                                class="btn btn-block btn-default link-btn link-btn-rounded animated infinite false delay-2s"
+                                style="background: #0C85C9;color: #FFFFFF">
+
+                                <i class="fas fa-address-card mr-1"></i>
+
+                                Facebook </a>
+                        </div>
+
+                    </div>
+
+
+
+                    <div data-link-id="132">
+
+
+
+                        <div class="my-3">
+                            <a href="https://api.whatsapp.com/send?phone=6282228478110"
+                                class="btn btn-block btn-default link-btn link-btn-rounded animated infinite false delay-2s"
+                                style="background: #00D891;color: #FFFFFF">
+
+                                <i class="far fa-comment-dots mr-1"></i>
+
+                                Whatsapp </a>
+                        </div>
+
+                    </div>
+
+
+
+                    <div data-link-id="133">
+
+
+
+                        <div class="my-3">
+                            <a href="https://t.me/ariiqomari"
+                                class="btn btn-block btn-default link-btn link-btn-rounded animated infinite false delay-2s"
+                                style="background: #5C1AE4;color: #F1F1F1">
+
+                                <i class="fab fa-telegram-plane mr-1"></i>
+
+                                Telegram </a>
+                        </div>
+
+                    </div>
+
+
+                    <div data-link-id="134">
+
+
+                        <!--
+                        <div class="my-3">
+                            <a href="https://kumamanga.my.id" data-location-url="KumaID"
+                                class="btn btn-block btn-default link-btn link-btn-rounded animated infinite false delay-2s"
+                                style="background: #FF0000;color: #FFFFFF">
+
+                                <i class="fas fa-book mr-1"></i>
+
+                                Baca Manga? Disini </a>
+                        </div>
+                    -->
+
+                    </div>
+
+
+                </main>
+
+                <footer class="link-footer">
+
+
+                </footer>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+<script src="https://cek.bio/themes/altum/assets/js/libraries/jquery.min.js?v=431"></script>
+<script src="https://cek.bio/themes/altum/assets/js/libraries/popper.min.js?v=431"></script>
+<script src="https://cek.bio/themes/altum/assets/js/libraries/bootstrap.min.js?v=431"></script>
+<script src="https://cek.bio/themes/altum/assets/js/main.js?v=431"></script>
+<script src="https://cek.bio/themes/altum/assets/js/functions.js?v=431"></script>
+<script src="https://cek.bio/themes/altum/assets/js/libraries/fontawesome.min.js?v=431"></script>
+
+<script>
+    /* Internal tracking for biolink links */
+    $('[data-location-url]').on('click', event => {
+
+        let base_url = $('[name="url"]').val();
+        let url = $(event.currentTarget).data('location-url');
+
+        $.ajax(`${base_url}${url}?no_redirect`);
+    });
+</script>
+
+</html>

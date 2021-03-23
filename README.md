@@ -2,4 +2,4 @@
  https://uukdesu.github.io
 
 ## Credit
-[Cek.Bio](https://cek.bio/)
+[MrMiss](https://mrmiss.wtf/)

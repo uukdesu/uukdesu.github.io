@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8"><title>Uukina - Personal Website</title><link rel="icon" href="https://uukina.github.io/assets/images/emilia.ico">
+<meta charset="utf-8"><title>Uukina - Personal Website</title><link rel="icon" href="https://uukina.github.io/assets/images/icon.png">
 <link rel="preload" href="/assets/fonts/Manrope-Latin.woff2" as="font" crossorigin="anonymous" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Uukina's personal wabsites">
@@ -26,7 +26,7 @@
 <header class="navHeader">
 <nav class="navbar navbar-expand-lg navbar-light justify-content-between nvcustom">
 <a class="navbar-brand" href="/">
-<img id="logo" alt="Uuk" align="left" src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/6/68/Vladilena_Mirize_Icon.jpg/revision/latest/scale-to-width-down/250?cb=20210224033513" />
+<img id="logo" alt="Uuk" align="left" src="https://uukina.github.io/assets/images/emilia.ico" />
 <p class="brandTitle">Uuk</p>
 <p class="brandDescription">Muhammad Arif Qomari</p>
 </a>
@@ -35,9 +35,9 @@
 </button>
 <div class="collapse navbar-collapse" id="main-navbar">
 <ul class="nav navbar-nav ml-auto"><li class="nav-item active">
-<a href="/about.html" class="nav-link navLinkContainer">
+<a href="/profile.html" class="nav-link navLinkContainer">
 <span class="navbarLinkText">
-About
+Profile
 <div class="linkBorder"></div>
 </span>
 </a>
@@ -105,6 +105,87 @@ Drive
 </nav>
 </header>
 <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:900,300);
+body {
+  background-color: #f0f0f0;
+  font-family: roboto;
+}
+.container {
+  width: 400px;
+  margin: 120px auto 120px;
+  background-color: #fff;
+  padding: 0 20px 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  text-align: center;
+}
+.container:hover .avatar-flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.container:hover .avatar-flip img:first-child {
+  opacity: 0;
+}
+.container:hover .avatar-flip img:last-child {
+  opacity: 1;
+}
+.avatar-flip {
+  border-radius: 100px;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  position: relative;
+  margin: auto;
+  top: -60px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 13px #f0f0f0;
+  -webkit-box-shadow: 0 0 0 13px #f0f0f0;
+  -moz-box-shadow: 0 0 0 13px #f0f0f0;
+}
+.avatar-flip img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+.avatar-flip img:first-child {
+  z-index: 1;
+}
+.avatar-flip img:last-child {
+  z-index: 0;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  opacity: 0;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+h4 {
+  font-size: 15px;
+  color: #00baff;
+  letter-spacing: 1px;
+  margin-bottom: 25px
+}
+p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  color: #666;
+}
+    </style>
+<style>
   body {
     visibility: hidden;
     opacity: 0;
@@ -128,12 +209,15 @@ window.addEventListener('DOMContentLoaded', function () {
 </script>
 <div class="navContentBorder"></div>
 <section class="mainContent">
-<div class="col text-center justify-content-center">
-<img class="spin" src="https://uukina.github.io/assets/images/kei/BkYOecM.gif">
-<h1 id="mh1" style="margin: 24px 0px 0px 0px; color:var(--font-special-color);">UUKINA</h1>
-</div>
-<div class="col text-center justify-content-center">
-<h2 class="normal">Welcome to my personal website</h2><br>
+<div class="container">
+  <div class="avatar-flip">
+    <img src="https://i.pinimg.com/564x/bf/cf/64/bfcf64f01e659608718c76fa7ebd590b.jpg" height="150" width="150">
+    <img src="https://64.media.tumblr.com/2f0afd4ada44913a71e461633d27a777/4f88dd05bb88383c-02/s540x810/703fde1efab3c8c26d80c84a59e1ee58707327a8.gifv" height="150" width="150">
+  </div>
+  <h2>Muhammad Arif Qomari</h2>
+  <h4>Uuk</h4>
+  <p>Hanya seorang vvibu yang suka bermain game dan mendengarkan musik</p>
+  <p>Hubungi saya di : <br>Telegram : @ariiqomari <br> Discord : @Uuk#0015</p>
 </div>
 </section>
 </body>

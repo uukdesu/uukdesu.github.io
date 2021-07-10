@@ -1,5 +1,5 @@
 # uukdesu.github.io
- https://uukdesu.github.io
+ https://uukina.github.io
 
 ## Credit
-[MrMiss](https://mrmiss.wtf/)
+[KeiCamp](https://kei.moe/)
